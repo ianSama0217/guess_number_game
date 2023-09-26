@@ -12,7 +12,13 @@ console.log(bingo);
 answer.addEventListener("click", () => {
   if (num.value == bingo) {
     gameHint.innerHTML = " 答對了!";
+    num.max = bingo;
+    num.min = bingo;
     numRange.innerHTML = bingo;
+  } else if (num.value == max || num.value == min) {
+    gameHint.innerHTML = " 請不要輸入重複的數字!";
+  } else if (!num.value) {
+    gameHint.innerHTML = " 請輸入一個數字!";
   } else if (num.value > bingo) {
     gameHint.innerHTML = " 再小一點!";
     max = num.value;
