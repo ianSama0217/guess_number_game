@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="numberBox">
+      <h3 id="gameHint">猜一個數字</h3>
+      <h1 id="numRange">1 ~ 100</h1>
+      <input type="number" id="num" min="1" max="100" />
+      <button type="button" id="answer">回答</button>
+      <button type="button" onclick="window.location.reload()">再玩一次</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
